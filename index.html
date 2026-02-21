@@ -4,106 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shemaars Photo Gallery</title>
-
-<style>
-
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* BODY */
-body {
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: white;
-}
-
-/* HEADER */
-header {
-  text-align: center;
-  padding: 40px 20px;
-  background: #111827;
-}
-
-header h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-header p {
-  color: #9ca3af;
-}
-
-/* GALLERY GRID */
-.gallery {
-  width: 90%;
-  max-width: 1200px;
-  margin: 40px auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-/* IMAGE CARD */
-.card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 15px;
-  cursor: pointer;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-}
-
-/* IMAGE */
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.5s ease;
-}
-
-/* HOVER EFFECT */
-.card:hover img {
-  transform: scale(1.1);
-}
-
-/* OVERLAY TEXT */
-.overlay {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 15px;
-  background: rgba(0, 0, 0, 0.6);
-  text-align: center;
-  font-size: 18px;
-  transform: translateY(100%);
-  transition: transform 0.4s ease;
-}
-
-.card:hover .overlay {
-  transform: translateY(0);
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #111827;
-  margin-top: 40px;
-  color: #9ca3af;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
   <h1>Shemaars Photo Gallery</h1>
-  <p>Capturing Nature’s Beauty</p>
+  <p>Explore the beauty of nature through my lens</p>
 </header>
 
 <section class="gallery">
