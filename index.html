@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shemaar</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -12,38 +12,48 @@
 <header>
     <nav class="navbar">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html" class="active">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<!-- Gallery Section -->
-<main>
-    <h1 class="title">Gallery</h1>
-    <div class="gallery-container">
-        <!-- Repeat this block for each image -->
-        <div class="gallery-item">
-            <img src="images/photo1.jpg" alt="Gallery Image 1" />
-        </div>
-        <div class="gallery-item">
-            <img src="images/photo2.jpg" alt="Gallery Image 2" />
-        </div>
-        <div class="gallery-item">
-            <img src="images/photo3.jpg" alt="Gallery Image 3" />
-        </div>
-        <div class="gallery-item">
-            <img src="images/photo4.jpg" alt="Gallery Image 4" />
-        </div>
-        <!-- …add more images as needed -->
-    </div>
-</main>
+<!-- Home Section -->
+<section id="home">
+    <h1>Welcome to My Portfolio</h1>
+    <p>This is my personal website.</p>
+</section>
 
-<footer>
-    <p>© 2026 Your Name</p>
-</footer>
+<!-- About Me Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I’m Jake, a photography and web design enthusiast. Here you can see my work and contact me.</p>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="images/photo1.jpg" alt="Photo 1">
+        <img src="images/photo2.jpg" alt="Photo 2">
+        <img src="images/photo3.jpg" alt="Photo 3">
+        <img src="images/photo4.jpg" alt="Photo 4">
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required><br>
+        <input type="email" placeholder="Your Email" required><br>
+        <textarea placeholder="Your Message" required></textarea><br>
+        <button type="submit">Send</button>
+    </form>
+</section>
 
 </body>
+</html>
 </html>
