@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shemaar Vandenburg</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shemaar</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
+<!-- Navbar -->
 <header>
-    <h1>My Photo Gallery</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
-<div class="gallery">
-    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600" alt="Nature">
-    <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=600" alt="City">
-    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600" alt="Technology">
-    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600" alt="Car">
-    <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=600" alt="Animal">
-    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600" alt="Travel">
-</div>
+<!-- Gallery Section -->
+<main>
+    <h1 class="title">Gallery</h1>
+    <div class="gallery-container">
+        <!-- Repeat this block for each image -->
+        <div class="gallery-item">
+            <img src="images/photo1.jpg" alt="Gallery Image 1" />
+        </div>
+        <div class="gallery-item">
+            <img src="images/photo2.jpg" alt="Gallery Image 2" />
+        </div>
+        <div class="gallery-item">
+            <img src="images/photo3.jpg" alt="Gallery Image 3" />
+        </div>
+        <div class="gallery-item">
+            <img src="images/photo4.jpg" alt="Gallery Image 4" />
+        </div>
+        <!-- …add more images as needed -->
+    </div>
+</main>
 
 <footer>
-    © 2026 My Website
+    <p>© 2026 Your Name</p>
 </footer>
 
 </body>
