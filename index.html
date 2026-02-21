@@ -47,3 +47,80 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Random Photo Gallery</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>My Random Gallery</h1>
+</header>
+
+<div class="gallery">
+    <img src="https://source.unsplash.com/random/400x400?nature" alt="Nature">
+    <img src="https://source.unsplash.com/random/401x400?city" alt="City">
+    <img src="https://source.unsplash.com/random/402x400?technology" alt="Technology">
+    <img src="https://source.unsplash.com/random/403x400?cars" alt="Cars">
+    <img src="https://source.unsplash.com/random/404x400?animals" alt="Animals">
+    <img src="https://source.unsplash.com/random/405x400?travel" alt="Travel">
+    <img src="https://source.unsplash.com/random/406x400?space" alt="Space">
+    <img src="https://source.unsplash.com/random/407x400?food" alt="Food">
+</div>
+
+<footer>
+    © 2026 My Website
+</footer>
+
+</body>
+</html>
