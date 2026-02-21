@@ -1,50 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Shemaars Photo Gallery</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shemaars Photo Gallery</title>
+
+<style>
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #111827;
+}
+
+header h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #9ca3af;
+}
+
+/* GALLERY GRID */
+.gallery {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* IMAGE CARD */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* IMAGE */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* HOVER EFFECT */
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/* OVERLAY TEXT */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 18px;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.card:hover .overlay {
+  transform: translateY(0);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+  margin-top: 40px;
+  color: #9ca3af;
+}
+
+</style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Shemaars Photo Gallery</h1>
-    <p>Capturing Nature’s Beauty</p>
-  </header>
+<header>
+  <h1>Shemaars Photo Gallery</h1>
+  <p>Capturing Nature’s Beauty</p>
+</header>
 
-  <section class="photo-gallery">
-    
-    <div class="gallery-item">
-      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Mountain Sunset">
-      <div class="overlay">Mountain Sunset</div>
-    </div>
+<section class="gallery">
 
-    <div class="gallery-item">
-      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Green Forest">
-      <div class="overlay">Green Forest</div>
-    </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Mountain Sunset">
+    <div class="overlay">Mountain Sunset</div>
+  </div>
 
-    <div class="gallery-item">
-      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Ocean View">
-      <div class="overlay">Ocean View</div>
-    </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Green Forest">
+    <div class="overlay">Green Forest</div>
+  </div>
 
-    <div class="gallery-item">
-      <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d" alt="Forest Path">
-      <div class="overlay">Forest Path</div>
-    </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Ocean View">
+    <div class="overlay">Ocean View</div>
+  </div>
 
-    <div class="gallery-item">
-      <img src="https://images.unsplash.com/photo-1493244040629-496f6d136cc3" alt="Night Sky">
-      <div class="overlay">Night Sky</div>
-    </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d" alt="Forest Path">
+    <div class="overlay">Forest Path</div>
+  </div>
 
-    <div class="gallery-item">
-      <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" alt="Lake Reflection">
-      <div class="overlay">Lake Reflection</div>
-    </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1493244040629-496f6d136cc3" alt="Night Sky">
+    <div class="overlay">Night Sky</div>
+  </div>
 
-  </section>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" alt="Lake Reflection">
+    <div class="overlay">Lake Reflection</div>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Shemaars Photo Gallery | All Rights Reserved
+</footer>
 
 </body>
 </html>
